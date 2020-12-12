@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://broxes@bitbucket.org/broxes/bootstrap.git"
+  },
+  "author": "EGL",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/broxes/bootstrap#readme"
+}
