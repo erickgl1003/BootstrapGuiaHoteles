@@ -1,6 +1,10 @@
 .jumbotron{
-	background-color: LightCyan;
-	color: black;
+	background-color: rgb(30, 144, 255);
+	
+	background-image: url("/images/img_tam.jpg");
+	color: white;
+
+	background-blend-mode: luminosity;
 	margin-top: 50px;
 }
 footer{
@@ -8,6 +12,10 @@ footer{
 	background-color: LightCyan;
 	margin-bottom: 0px;
 	margin-top: 10px;
+	
+}
+.boldtext{
+	font-weight: 350;
 }
 .card-hotel{
 	flex: 1 200px;
