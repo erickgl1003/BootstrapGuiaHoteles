@@ -47,18 +47,23 @@
 	<h1 class="display-1 boldtext "> Guía de hoteles </h1>
 </div>
 <div class= "container">
-	
+	<div class "row">
+		<div class="col-sm-4">
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#rapido" aria-expanded="false" aria-controls="multiCollapse1">Rápido</button>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguro" aria-expanded="false" aria-controls="multiCollapse2">Seguro</button>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#facil" aria-expanded="false" aria-controls="multiCollapse3">Fácil</button>
+		</div>
 	<div class="row">
-		<div class="col-sm"> 
+		<div class="col-sm-4 collapse multi-collapse" id="rapido"> 
 			<h3> Rápido </h3>
 				<p> Encontrarás toda la información que necesites eficazmente </p>
 		</div>
-		<div class="col-sm"> 
+		<div class="col-sm-4 collapse multi-collapse" id="seguro"> 
 			<h3> Seguro </h3>
 				<p> No recopilaremos tu información ni guardaremos tus datos</p>
 		</div>
-		<div class="col-sm"> 
-			<h3> Sencillo </h3>
+		<div class="col-sm-4 collapse multi-collapse" id="facil"> 
+			<h3> Fácil </h3>
 			<p> Descubre los hoteles más reconocidos de nuestra área </p>
 		</div>
 	</div>
@@ -72,6 +77,7 @@
 			<h4 class="card-subtitle text-muted">Tampico</h4>
 			
 			<p class="card-text">Ubicado en Zona Dorada, junto a la laguna El Chairel y a 4 km del Aeropuerto Internacional General Francisco Javier Mina </p>
+			<button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#contacto">Contactar</button>
 			</div>
 			<div>
 					<button type="button" class="btn btn-primary btn-reserva">Reservar </button>
@@ -85,6 +91,7 @@
 			<h4 class="card-subtitle text-muted">Madero</h4>
 			
 			<p class="card-text">Se encuentra a 13 minutos a pie del parque Fray Andrés de Olmos y a 4,8 km del estadio Tamaulipas</p>
+			<button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#contacto">Contactar</button>
 			</div>
 			<div>
 				
@@ -99,6 +106,7 @@
 			<h4 class="card-subtitle text-muted">Tampico</h4>
 			
 			<p class="card-text">Ubicado a 2,6 km del Aeropuerto Internacional General Francisco Javier Mina y a 3,5 km del estadio Tamaulipas </p>
+			<button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#contacto">Contactar</button>
 			</div>
 			<div>
 				
@@ -113,6 +121,7 @@
 			<h4 class="card-subtitle text-muted">Altamira</h4>
 			
 			<p class="card-text">Ubicado a 1,2 km del Aeropuerto Internacional General Francisco Javier Mina y a 2,1 km del estadio Tamaulipas </p>
+			<button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#contacto">Contactar</button>
 			</div>
 			<div>
 				
@@ -121,6 +130,35 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="col-form-label">Tu email:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="col-form-label">Mensaje:</label>
+								<textarea class="form-control"  id="message-text"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	
 </div>
 

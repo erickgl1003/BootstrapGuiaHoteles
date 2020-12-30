@@ -53,6 +53,19 @@
 			<li class="breadcrumb-item active" aria-current="page">Precios</li>
 		</ol>
 	</nav>
+	<ul class="nav nav-tabs" id ="myTab" role="tablist">
+		<li class="nav-item">
+			<a class = "nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+		</li>
+		<li class="nav-item">
+			<a class = "nav-link" id="membrecias-tab" data-toggle="tab" href="#membrecias" role="tab" aria-controls="membrecias" aria-selected="false">Membrecías</a>
+		</li>
+		<li class="nav-item">
+			<a class = "nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+		</li>
+	</ul>
+<div class="tab-content" id="myTabContent">
+	<div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
 	<div class ="table-responsive">
 	<table class = "table table-striped">
 	<thead class="thead-dark">
@@ -96,6 +109,55 @@
 </table>
 </div>
 </div>
+<div class="tab-pane fade" id="membrecias" role="tabpanel" aria-labelledby="membrecias-tab">
+	<div class="accordion" id="accordionMembrecias">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h5 class="mb-0">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapsedBasica">Membresía básica
+				</button>
+			</h5>
+		</div>
+		<div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionMembrecias">
+			<div class="card-body">
+				Incluye desayuno gratis durante su estancia.
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h5 class="mb-0">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePro" aria-expanded="false" aria-controls="collapsedPro">Membresía básica
+				</button>
+			</h5>
+		</div>
+		<div id="collapsePro" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMembrecias">
+			<div class="card-body">
+				Incluye desayuno gratis durante su estancia, recorrido turístico y acceso gratuito a todas nuestras instalaciones.
+
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h5 class="mb-0">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePremium" aria-expanded="false" aria-controls="collapsedPremium">Membresía básica
+				</button>
+			</h5>
+		</div>
+		<div id="collapsePremium" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMembrecias">
+			<div class="card-body">
+				Incluye 3 comidas gratis en el hotel durante su estancia, recorrido turístico, acceso gratuito a todas nuestras instalaciones, transporte privado y una canasta de obsequios.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelled="comentarios-tab">Comentarios</div>
+</div>
+</div>
+
+
 
 
 
