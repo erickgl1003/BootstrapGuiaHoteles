@@ -1,0 +1,46 @@
+$LightCyan: #ffffff;
+$yellow: #00587C;
+$blue: #00587C;
+$red: #00587C;
+$green: #00587C;
+$primary: #00587C;
+@import "node_modules/bootstrap/scss/bootstrap";
+@mixin marg($top, $bottom){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+.jumbotron{
+	background-color: rgb(30, 144, 255);
+	
+	background-image: url("/images/img_tam.jpg");
+	color: white;
+
+	background-blend-mode: luminosity;
+	@include marg(30px, 10px);
+}
+footer{
+	padding: 10px 10px 0 10px;
+	background-color: LightCyan;
+	@include marg(10px, 0px);
+	
+}
+.boldtext{
+	font-weight: 350;
+}
+.card-hotel{
+	flex: 1 200px;
+	@include marg(10px, 0px);
+
+}
+.btn-reserva{
+	width: 100%;
+	border-radius: 0px;
+
+}
+
+.tab-content{
+	padding-top: 10px;
+}
+.btn-outline-primary{
+	@include marg(0px, 10px);
+}

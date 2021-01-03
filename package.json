@@ -5,7 +5,15 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run watch:scss \" \"npm run dev \"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "terser": "terser index.html --compress --mangle --output dist/index.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
+    "build": " npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -15,11 +23,22 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/broxes/bootstrap1#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "grunt": "^1.3.0",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "terser": "^5.5.1",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "concurrently": "^5.3.0",
+    "imagemin": "^7.0.1",
     "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
   }
