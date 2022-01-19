@@ -13,7 +13,7 @@
     "imagemin": "imagemin images/* --out-dir dist/images",
     "terser": "terser index.html --compress --mangle --output dist/index.html",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
-    "build": " npm run clean && npm run scss && npm run imagemin && npm run usemin"
+    "build": " npm run clean && npm run scss && npm run usemin"
   },
   "repository": {
     "type": "git",
